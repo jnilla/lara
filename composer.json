@@ -1,0 +1,22 @@
+{
+	"name": "jnilla/lara",
+	"type": "library",
+	"description": "Joomla component framework inspired in Laravel ",
+	"keywords": ["joomla","component","framework", "laravel"],
+	"homepage": "https://github.com/jnilla/joomla-request-batcher",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Edric Navarro",
+			"email": "digitalcomputer2142@gmail.com",
+			"homepage": "https://github.com/jnilla",
+			"role": "Developer"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Jnilla\\": "src/"
+		}
+	}
+}
+
