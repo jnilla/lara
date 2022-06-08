@@ -1,18 +1,18 @@
 <?php
 defined('_JEXEC') or die;
 
-require JPATH_LIBRARIES.'/jnillacomponentframework/vendor/autoload.php';
+require __DIR__."/../../../autoload.php";
 
 use Joomla\CMS\Factory as JFactory;
 use Joomla\CMS\MVC\Controller\BaseController as JControllerLegacy;
-use Jnilla\Joomla\ComponentFramework\Helper\Base as JnillaComponentFrameworkBaseHelper;
+use Jnilla\Lara\Helper\Base as LaraBaseHelper;
 
-extract(JnillaComponentFrameworkBaseHelper::prepareFrameworkVariables());
+extract(LaraBaseHelper::prepareFrameworkVariables());
 
-JFactory::getLanguage()->load('lib_jnillacomponentframework', JPATH_SITE);
+JFactory::getLanguage()->load('lib_lara', JPATH_SITE);
 
-JnillaComponentFrameworkBaseHelper::autoRegisterComponentHelpers(JPATH_COMPONENT_ADMINISTRATOR."/helpers");
-JnillaComponentFrameworkBaseHelper::autoRegisterComponentHelpers(JPATH_COMPONENT_SITE."/helpers");
+LaraBaseHelper::autoRegisterComponentHelpers(JPATH_COMPONENT_ADMINISTRATOR."/helpers");
+LaraBaseHelper::autoRegisterComponentHelpers(JPATH_COMPONENT_SITE."/helpers");
 
 JLoader::register("{$componentNameInPascalCase}Controller", JPATH_COMPONENT.'/controller.php');
 
