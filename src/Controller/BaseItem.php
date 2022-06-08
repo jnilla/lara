@@ -1,5 +1,5 @@
 <?php
-namespace Jnilla\Joomla\ComponentFramework\Controller;
+namespace Jnilla\Lara\Controller;
 
 defined('_JEXEC') or die;
 
@@ -18,7 +18,7 @@ class BaseItem extends \Joomla\CMS\MVC\Controller\FormController{
 		$this->frameworkVariables['currentElementSubType'] = 'item';
 
 		// Initialize framework variables
-		$this->frameworkVariables = \Jnilla\Joomla\ComponentFramework\Helper\Base::prepareFrameworkVariables($this->frameworkVariables);
+		$this->frameworkVariables = \Jnilla\Lara\Helper\Base::prepareFrameworkVariables($this->frameworkVariables);
 
 		$this->view_list = $this->frameworkVariables["itemListNameInCamelCase"];
 

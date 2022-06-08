@@ -1,5 +1,5 @@
 <?php
-namespace Jnilla\Joomla\ComponentFramework\Router;
+namespace Jnilla\Lara\Router;
 
 defined('_JEXEC') or die;
 

@@ -1,5 +1,5 @@
 <?php
-namespace Jnilla\Joomla\ComponentFramework\Controller;
+namespace Jnilla\Lara\Controller;
 
 defined('_JEXEC') or die;
 
@@ -15,7 +15,7 @@ class BaseMaster extends \Joomla\CMS\MVC\Controller\BaseController{
 	 */
 	public function __construct($config = array()){
 		// Initialize framework variables
-		$this->frameworkVariables = \Jnilla\Joomla\ComponentFramework\Helper\Base::prepareFrameworkVariables($this->frameworkVariables);
+		$this->frameworkVariables = \Jnilla\Lara\Helper\Base::prepareFrameworkVariables($this->frameworkVariables);
 
 		parent::__construct($config);
 	}

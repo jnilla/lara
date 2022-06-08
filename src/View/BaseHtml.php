@@ -1,9 +1,9 @@
 <?php
-namespace Jnilla\Joomla\ComponentFramework\View;
+namespace Jnilla\Lara\View;
 
 defined('_JEXEC') or die;
 
-use Jnilla\Joomla\ComponentFramework\Helper\Admin as JnAdminHelper;
+use Jnilla\Lara\Helper\Admin as JnAdminHelper;
 use Joomla\CMS\MVC\View\HtmlView as JViewLegacy;
 use Exception;
 

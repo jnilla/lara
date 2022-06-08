@@ -1,5 +1,5 @@
 <?php
-namespace Jnilla\Joomla\ComponentFramework\Model;
+namespace Jnilla\Lara\Model;
 
 defined('_JEXEC') or die;
 
@@ -24,7 +24,7 @@ class BaseItemList extends \Joomla\CMS\MVC\Model\ListModel{
 		$this->frameworkVariables['currentElementSubType'] = 'itemList';
 
 		// Initialize framework variables
-		$this->frameworkVariables = \Jnilla\Joomla\ComponentFramework\Helper\Base::prepareFrameworkVariables($this->frameworkVariables);
+		$this->frameworkVariables = \Jnilla\Lara\Helper\Base::prepareFrameworkVariables($this->frameworkVariables);
 
 		// Extract framework variables
 		extract($this->frameworkVariables);

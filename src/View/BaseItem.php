@@ -1,5 +1,5 @@
 <?php
-namespace Jnilla\Joomla\ComponentFramework\View;
+namespace Jnilla\Lara\View;
 
 defined('_JEXEC') or die;
 
@@ -27,7 +27,7 @@ class BaseItem extends JViewLegacy{
 		$this->frameworkVariables['currentElementSubType'] = 'item';
 
 		// Initialize framework variables
-		$this->frameworkVariables = \Jnilla\Joomla\ComponentFramework\Helper\Base::prepareFrameworkVariables($this->frameworkVariables);
+		$this->frameworkVariables = \Jnilla\Lara\Helper\Base::prepareFrameworkVariables($this->frameworkVariables);
 
 		parent::__construct($config);
 	}

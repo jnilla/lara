@@ -1,5 +1,5 @@
 <?php
-namespace Jnilla\Joomla\ComponentFramework\Table;
+namespace Jnilla\Lara\Table;
 
 defined('_JEXEC') or die;
 
@@ -20,7 +20,7 @@ class BaseItem extends \Joomla\CMS\Table\Table{
 	 */
 	public function __construct(&$db){
 		// Initialize framework variables
-		$this->frameworkVariables = \Jnilla\Joomla\ComponentFramework\Helper\Base::prepareFrameworkVariables($this->frameworkVariables);
+		$this->frameworkVariables = \Jnilla\Lara\Helper\Base::prepareFrameworkVariables($this->frameworkVariables);
 
 		// Extract framework variables
 		extract($this->frameworkVariables);

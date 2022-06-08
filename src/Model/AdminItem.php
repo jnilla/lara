@@ -1,5 +1,5 @@
 <?php
-namespace Jnilla\Joomla\ComponentFramework\Model;
+namespace Jnilla\Lara\Model;
 
 defined('_JEXEC') or die;
 

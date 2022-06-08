@@ -1,5 +1,5 @@
 <?php
-namespace Jnilla\Joomla\ComponentFramework\Helper;
+namespace Jnilla\Lara\Helper;
 
 defined('_JEXEC') or die;
 

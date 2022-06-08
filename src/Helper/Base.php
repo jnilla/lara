@@ -1,5 +1,5 @@
 <?php
-namespace Jnilla\Joomla\ComponentFramework\Helper;
+namespace Jnilla\Lara\Helper;
 
 defined('_JEXEC') or die;
 
@@ -94,9 +94,9 @@ class Base{
 
 		// Add reference to current client helper
 		if(JFactory::getApplication()->isClient('site')){
-			$frameworkVariables['helper'] = "Jnilla\Joomla\ComponentFramework\Helper\Site";
+			$frameworkVariables['helper'] = "Jnilla\Lara\Helper\Site";
 		}else{
-			$frameworkVariables['helper'] = "Jnilla\Joomla\ComponentFramework\Helper\Admin";
+			$frameworkVariables['helper'] = "Jnilla\Lara\Helper\Admin";
 		}
 
 		// Add configurations related to current class name for easy access on variable extraction

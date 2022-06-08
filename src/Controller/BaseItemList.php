@@ -1,5 +1,5 @@
 <?php
-namespace Jnilla\Joomla\ComponentFramework\Controller;
+namespace Jnilla\Lara\Controller;
 
 defined('_JEXEC') or die;
 
@@ -26,7 +26,7 @@ class BaseItemList extends JControllerAdmin{
 		$this->frameworkVariables['currentElementSubType'] = 'itemList';
 
 		// Initialize framework variables
-		$this->frameworkVariables = \Jnilla\Joomla\ComponentFramework\Helper\Base::prepareFrameworkVariables($this->frameworkVariables);
+		$this->frameworkVariables = \Jnilla\Lara\Helper\Base::prepareFrameworkVariables($this->frameworkVariables);
 
 		$this->text_prefix = "LIB_JNILLACOMPONENTFRAMEWORK";
 
