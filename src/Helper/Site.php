@@ -45,7 +45,7 @@ class Site extends Base{
 						break;
 					case 'add':
 						if($canDo->get("core.create")){
-							$text = JText::_('LIB_JNILLACOMPONENTFRAMEWORK_TOOLBAR_NEW');
+							$text = JText::_('LIB_LARA_TOOLBAR_NEW');
 							$href = "index.php?option=com_$componentNameInLowerCase&view=$itemNameInLowerCase&task=$itemNameInLowerCase.add&return=$return";
 							$href = JRoute::_($href);
 							$html[] = "<a href=\"$href\" class=\"btn btn-small btn-success\"><i class=\"icon-plus\"></i>&nbsp;$text</a>";
@@ -53,7 +53,7 @@ class Site extends Base{
 						break;
 					case 'edit':
 						if($canDo->get("core.edit")){
-							$text = \JText::_('LIB_JNILLACOMPONENTFRAMEWORK_TOOLBAR_EDIT');
+							$text = \JText::_('LIB_LARA_TOOLBAR_EDIT');
 							$id = JFactory::getApplication()->input->get('id', null, 'INT');
 							$href = "index.php?option=com_$componentNameInLowerCase&view=$itemNameInLowerCase&task=$itemNameInLowerCase.edit&id=$id&return=$return";
 							$href = JRoute::_($href);
@@ -62,9 +62,9 @@ class Site extends Base{
 						break;
 					case 'delete':
 						if($canDo->get("core.edit")){
-							\JText::script('LIB_JNILLACOMPONENTFRAMEWORK_PLEASE_MAKE_A_SELECTION_FROM_THE_LIST');
-							$text = JText::_('LIB_JNILLACOMPONENTFRAMEWORK_TOOLBAR_DELETE');
-							$html[] = "<span onclick=\"if (document.adminForm.boxchecked.value == 0) { alert(Joomla.JText._('LIB_JNILLACOMPONENTFRAMEWORK_PLEASE_MAKE_A_SELECTION_FROM_THE_LIST')); } else { Joomla.submitbutton('$itemListNameInLowerCase.delete'); }\" class=\"btn btn-small\"><i class=\"icon-remove\"></i>&nbsp;$text</span>";
+							\JText::script('LIB_LARA_PLEASE_MAKE_A_SELECTION_FROM_THE_LIST');
+							$text = JText::_('LIB_LARA_TOOLBAR_DELETE');
+							$html[] = "<span onclick=\"if (document.adminForm.boxchecked.value == 0) { alert(Joomla.JText._('LIB_LARA_PLEASE_MAKE_A_SELECTION_FROM_THE_LIST')); } else { Joomla.submitbutton('$itemListNameInLowerCase.delete'); }\" class=\"btn btn-small\"><i class=\"icon-remove\"></i>&nbsp;$text</span>";
 						}
 						break;
 					case 'checkin':
@@ -79,24 +79,24 @@ class Site extends Base{
 						break;
 					case 'save':
 						if($canDo->get('core.edit') || ($canDo->get('core.create'))){
-							$text = JText::_('LIB_JNILLACOMPONENTFRAMEWORK_TOOLBAR_APPLY');
+							$text = JText::_('LIB_LARA_TOOLBAR_APPLY');
 							$html[] = "<span onclick=\"Joomla.submitbutton('$itemNameInLowerCase.apply');\" class=\"btn btn-small btn-success\"><i class=\"icon-edit\"></i>&nbsp;$text</span>";
 						}
 						break;
 					case 'saveAndClose':
 						if($canDo->get('core.edit') || ($canDo->get('core.create'))){
-							$text = JText::_('LIB_JNILLACOMPONENTFRAMEWORK_TOOLBAR_SAVE');
+							$text = JText::_('LIB_LARA_TOOLBAR_SAVE');
 							$html[] = "<a onclick=\"Joomla.submitbutton('$itemNameInLowerCase.save');\" class=\"btn btn-small\"><i class=\"icon-ok text-success\"></i>&nbsp;$text</a>";
 						}
 						break;
 					case 'saveAndNew':
 						if($canDo->get('core.create')){
-							$text = JText::_('LIB_JNILLACOMPONENTFRAMEWORK_TOOLBAR_SAVE_AND_NEW');
+							$text = JText::_('LIB_LARA_TOOLBAR_SAVE_AND_NEW');
 							$html[] = "<a onclick=\"Joomla.submitbutton('$itemNameInLowerCase.save2new');\" class=\"btn btn-small\"><i class=\"icon-plus text-success\"></i>&nbsp;$text</a>";
 						}
 						break;
 					case 'cancel':
-						$text = JText::_('LIB_JNILLACOMPONENTFRAMEWORK_TOOLBAR_CANCEL');
+						$text = JText::_('LIB_LARA_TOOLBAR_CANCEL');
 						$html[] = "<a onclick=\"Joomla.submitbutton('$itemNameInLowerCase.cancel');\" class=\"btn btn-small\"><i class=\"icon-remove-sign text-error\"></i>&nbsp;$text</a>";
 						break;
 					case 'custom':

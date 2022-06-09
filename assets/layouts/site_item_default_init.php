@@ -14,7 +14,7 @@ JHtml::_('behavior.keepalive');
 JHtml::_('behavior.tabstate');
 
 // Define page heading
-$pageHeading = JText::_("LIB_JNILLACOMPONENTFRAMEWORK_EDITING_ITEM")." id ".$this->item->id;
+$pageHeading = JText::_("LIB_LARA_EDITING_ITEM")." id ".$this->item->id;
 
 ?>
 <script type="text/javascript">

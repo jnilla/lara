@@ -13,7 +13,7 @@ defined('_JEXEC') or die;
 
 		<!-- Table -->
 		<?php if (empty($this->items)) : ?>
-			<div class="alert"><?php echo JText::_('LIB_JNILLACOMPONENTFRAMEWORK_NO_RESULTS'); ?></div>
+			<div class="alert"><?php echo JText::_('LIB_LARA_NO_RESULTS'); ?></div>
 		<?php else : ?>
 			<table class="table table-striped" id="<?php echo $itemListNameInLowerCase; ?>">
 				<!-- Table head -->
@@ -37,13 +37,13 @@ defined('_JEXEC') or die;
 								<?php elseif($field === 'id') : ?>
 									<?php
 									// ID field
-									echo JHtml::_('searchtools.sort', "LIB_JNILLACOMPONENTFRAMEWORK_COLUMN_ID", "a.id", $listDirection, $listOrder);
+									echo JHtml::_('searchtools.sort', "LIB_LARA_COLUMN_ID", "a.id", $listDirection, $listOrder);
 									?>
 								<?php elseif(strpos($field, 'fw_') === 0) : ?>
 									<?php
 									// Framework fields
 									$headerInUpperCase = strtoupper($field);
-									echo JHtml::_('searchtools.sort', "LIB_JNILLACOMPONENTFRAMEWORK_COLUMN_$headerInUpperCase", "a.$field", $listDirection, $listOrder);
+									echo JHtml::_('searchtools.sort', "LIB_LARA_COLUMN_$headerInUpperCase", "a.$field", $listDirection, $listOrder);
 									?>
 								<?php else : ?>
 									<?php
@@ -129,7 +129,7 @@ defined('_JEXEC') or die;
 					<tr>
 						<td colspan="<?php echo count($columns); ?>">
 							<div style="padding: 15px 0">
-								<?php echo JText::sprintf('LIB_JNILLACOMPONENTFRAMEWORK_PAGINATION_TOTAL_ITEMS', number_format($this->pagination->total, 0, '.', ',')); ?>
+								<?php echo JText::sprintf('LIB_LARA_PAGINATION_TOTAL_ITEMS', number_format($this->pagination->total, 0, '.', ',')); ?>
 							</div>
 							<?php echo $this->pagination->getListFooter(); ?>
 						</td>

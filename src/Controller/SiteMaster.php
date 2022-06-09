@@ -29,7 +29,7 @@ class SiteMaster extends BaseMaster{
 		if($this->input->get('view', '', 'CMD') === '')
 		{
 			$url = JRoute::_("index.php?option=com_$componentNameInLowerCase&view=$defaultViewName");
-			$this->setRedirect($url, JText::_('LIB_JNILLACOMPONENTFRAMEWORK_WARNING_EMPTY_VIEW'), 'warning');
+			$this->setRedirect($url, JText::_('LIB_LARA_WARNING_EMPTY_VIEW'), 'warning');
 			$this->redirect();
 		}
 		

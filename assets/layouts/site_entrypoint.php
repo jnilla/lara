@@ -1,7 +1,7 @@
 <?php
 defined('_JEXEC') or die;
 
-require __DIR__."/../../../autoload.php";
+require __DIR__."/../../../../autoload.php";
 
 use Joomla\CMS\Factory as JFactory;
 use Joomla\CMS\MVC\Controller\BaseController as JControllerLegacy;

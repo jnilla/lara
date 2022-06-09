@@ -25,6 +25,10 @@ class Base{
      * return void
      */
     public static function autoRegisterComponentHelpers($path){
+    	if(!JFolder::exists($path)){
+    		return;
+    	}
+    	
         $helpers = JFolder::files($path, '.php');
         foreach($helpers as $helper){
             $helper = basename($helper, '.php');

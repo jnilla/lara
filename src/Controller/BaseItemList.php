@@ -28,7 +28,7 @@ class BaseItemList extends JControllerAdmin{
 		// Initialize framework variables
 		$this->frameworkVariables = \Jnilla\Lara\Helper\Base::prepareFrameworkVariables($this->frameworkVariables);
 
-		$this->text_prefix = "LIB_JNILLACOMPONENTFRAMEWORK";
+		$this->text_prefix = "LIB_LARA";
 
 		parent::__construct($config);
 	}
