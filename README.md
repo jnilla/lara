@@ -7,7 +7,7 @@ Joomla component framework inspired in Laravel
 Install using Composer:
 
 ```
-composer require jnilla/lara
+composer require jnilla/lara:dev-main
 ```
 
 Load the library using the Composer autoloader:
@@ -18,11 +18,9 @@ require('vendor/autoload.php');
 
 ## Basic Usage
 
-Under construction...
 
 ## Example
 
-Under construction...
 
 ## License
 
